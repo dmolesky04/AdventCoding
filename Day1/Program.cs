@@ -1,4 +1,4 @@
-﻿var calorieData = File.ReadAllText("input.txt").Trim()
+﻿var calorieData = File.ReadAllText("Day1/input.txt").Trim()
     .Split("\n\n", StringSplitOptions.RemoveEmptyEntries)
     .Select(x => x.Split("\n"))
     .Select(x => x.Sum(n => int.Parse(n)))
